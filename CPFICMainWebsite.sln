@@ -43,7 +43,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccountManagement.Configura
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_WebsitemanagementQuery", "01_WebsitemanagementQuery\01_WebsitemanagementQuery.csproj", "{7701BA04-24CA-428C-9507-CAD4CCC1EE6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSitemanagement.Application", "WebSitemanagement.Application\WebSitemanagement.Application.csproj", "{0D23BF7C-9AB2-41EB-9B0B-07D49979F197}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebSitemanagement.Application", "WebSitemanagement.Application\WebSitemanagement.Application.csproj", "{0D23BF7C-9AB2-41EB-9B0B-07D49979F197}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

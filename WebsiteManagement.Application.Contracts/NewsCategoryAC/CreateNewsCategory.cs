@@ -8,8 +8,14 @@ namespace WebsiteManagement.Application.Contracts.NewsCategoryAC
 		//User Send Us
 		[Required(ErrorMessage =ValidationMessages.IsRequired)]
 		public string NewsHeader { get;  set; }
-		public string NewsHeaderDescription { get;  set; }
-		public string NewsHeaderPictureTitle { get;  set; }
+
+        [Required(ErrorMessage = ValidationMessages.IsRequired)]
+        public string NewsHeaderDescription { get;  set; }
+
+        [Required(ErrorMessage = ValidationMessages.IsRequired)]
+        public string NewsMainDescryption { get;  set; }
+
+        public string NewsHeaderPictureTitle { get;  set; }
 		public string NewsHeaderPictureAlt { get;  set; }
 		public string NewsHeaderPictureUrl { get;  set; }
 

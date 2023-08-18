@@ -26,7 +26,7 @@ namespace WebSitemanagement.Application
 
             var slug = command.Slug.Slugify();
 
-            var newscategory = new NewsCategoryDomain(command.NewsHeader, command.NewsHeaderDescription,
+            var newscategory = new NewsCategoryDomain(command.NewsHeader, command.NewsHeaderDescription,command.NewsMainDescryption,
                 command.NewsHeaderPictureTitle, command.NewsHeaderPictureAlt,
             command.NewsHeaderPictureUrl, command.KeyWords, command.MetaDescription, slug);
 
@@ -48,7 +48,7 @@ namespace WebSitemanagement.Application
             var slug = command.Slug.Slugify();
 
 
-            newscategory.Edit(command.NewsHeader, command.NewsHeaderDescription,
+            newscategory.Edit(command.NewsHeader, command.NewsHeaderDescription,command.NewsMainDescryption,
                 command.NewsHeaderPictureTitle, command.NewsHeaderPictureAlt,
             command.NewsHeaderPictureUrl, command.KeyWords, command.MetaDescription, slug);
             _newsCategoryRepository.SaveChanges();

@@ -21,7 +21,8 @@ namespace Websitemanagement.Infrastructure.EFCore.Repository
 				id=x.Id,
 				NewsHeader = x.NewsHeader, 
 				NewsHeaderDescription = x.NewsHeaderDescription,
-				NewsHeaderPictureTitle = x.NewsHeaderPictureTitle,
+                NewsMainDescryption= x.NewsMainDescryption,
+                NewsHeaderPictureTitle = x.NewsHeaderPictureTitle,
 				NewsHeaderPictureAlt = x.NewsHeaderPictureAlt,
 				NewsHeaderPictureUrl = x.NewsHeaderPictureUrl,
 				KeyWords = x.KeyWords,
@@ -39,7 +40,8 @@ namespace Websitemanagement.Infrastructure.EFCore.Repository
 				id = x.Id,
 				NewsHeader = x.NewsHeader,
 				NewsHeaderDescription = x.NewsHeaderDescription,
-				NewsHeaderPictureUrl = x.NewsHeaderPictureUrl,
+                NewsMainDescryption = x.NewsMainDescryption,
+                NewsHeaderPictureUrl = x.NewsHeaderPictureUrl,
 				CreationDate = x.CreationDate.ToString()
 			});
 

@@ -30,8 +30,17 @@
                 <div class="form-group">
                     <label asp-for="NewsHeaderDescription" class="control-label">متن اولیه خبر</label>
                     <textarea class="form-control autogrow" asp-for="NewsHeaderDescription"
-                              style="height: 104px; overflow: hidden; resize: horizontal; word-wrap: break-word;" id="titr2"></textarea>
+                              style="height: 104px; overflow-y:scroll; resize: none; word-wrap: break-word;" id="titr2"></textarea>
                     <span asp-validation-for="NewsHeaderDescription" class="error"></span>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label asp-for="NewsMainDescryption" class="control-label">متن اصلی خبر</label>
+                    <textarea class="form-control autogrow" asp-for="NewsMainDescryption"
+                              style="height: 104px; overflow-y:scroll; resize: none; word-wrap: break-word;" id="titr2"></textarea>
+                    <span asp-validation-for="NewsMainDescryption" class="error"></span>
                 </div>
             </div>
 

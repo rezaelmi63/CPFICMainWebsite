@@ -13,7 +13,8 @@ namespace Websitemanagement.Infrastructure.EFCore.Mapping
 
 			builder.Property(x => x.NewsHeader).HasMaxLength(255).IsRequired();
 			builder.Property(x => x.NewsHeaderDescription).HasMaxLength(1000);
-			builder.Property(x => x.NewsHeaderPictureTitle).HasMaxLength(500);
+			builder.Property(x => x.NewsMainDescryption).HasMaxLength(6000);
+            builder.Property(x => x.NewsHeaderPictureTitle).HasMaxLength(500);
 			builder.Property(x => x.NewsHeaderPictureAlt).HasMaxLength(255);
 			builder.Property(x => x.NewsHeaderPictureUrl).HasMaxLength(1000);
 			builder.Property(x => x.KeyWords).HasMaxLength(80).IsRequired();

@@ -1,15 +1,17 @@
 ﻿using _0_Framework.Doamain;
+using System.Diagnostics.SymbolStore;
 
 namespace WebsiteManagement.Domain.NewsCategoryAgg
 {
 	public  class NewsCategoryDomain : EntityBase
 	{
-		public NewsCategoryDomain(string newsHeader, string newsHeaderDescription, string newsHeaderPictureTitle, string newsHeaderPictureAlt,
+		public NewsCategoryDomain(string newsHeader, string newsHeaderDescription, string newsMainDescryption, string newsHeaderPictureTitle, string newsHeaderPictureAlt,
 			string newsHeaderPictureUrl, string keyWords, string metaDescription, string slug)
 		{
 			NewsHeader = newsHeader;
 			NewsHeaderDescription = newsHeaderDescription;
-			NewsHeaderPictureTitle = newsHeaderPictureTitle;
+            NewsMainDescryption = newsMainDescryption;
+            NewsHeaderPictureTitle = newsHeaderPictureTitle;
 			NewsHeaderPictureAlt = newsHeaderPictureAlt;
 			NewsHeaderPictureUrl = newsHeaderPictureUrl;
 			KeyWords = keyWords;
@@ -18,13 +20,14 @@ namespace WebsiteManagement.Domain.NewsCategoryAgg
 			IsRemoved = false;
 		}
 
-		public void Edit(string newsHeader, string newsHeaderDescription, string newsHeaderPictureTitle, string newsHeaderPictureAlt,
+		public void Edit(string newsHeader, string newsHeaderDescription,string newsMainDescryption, string newsHeaderPictureTitle, string newsHeaderPictureAlt,
 			string newsHeaderPictureUrl, string keyWords, string metaDescription, string slug)
 		{
 
 			NewsHeader = newsHeader;
 			NewsHeaderDescription = newsHeaderDescription;
-			NewsHeaderPictureTitle = newsHeaderPictureTitle;
+            NewsMainDescryption = newsMainDescryption;
+            NewsHeaderPictureTitle = newsHeaderPictureTitle;
 			NewsHeaderPictureAlt = newsHeaderPictureAlt;
 
 			if (!string.IsNullOrWhiteSpace(newsHeaderPictureUrl))
@@ -44,15 +47,14 @@ namespace WebsiteManagement.Domain.NewsCategoryAgg
 
 		public string  NewsHeader { get;private set; }
 		public string NewsHeaderDescription { get;private set; }
-		public string NewsHeaderPictureTitle { get; private set; }
+        public string NewsMainDescryption { get; private set; }
+        public string NewsHeaderPictureTitle { get; private set; }
 		public string NewsHeaderPictureAlt { get; private set; }
 		public string NewsHeaderPictureUrl { get; private set; }
 		public string KeyWords { get; private set; }
         public string MetaDescription  { get;private set; }
         public string Slug { get; private set; }
         public bool IsRemoved { get; private set; }
-
-
 
 	}
 }
