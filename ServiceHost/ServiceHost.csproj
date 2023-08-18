@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AccountManagement.Configuration\AccountManagement.Configuration.csproj" />
+    <ProjectReference Include="..\WbsiteManagement.Configuration\WbsiteManagement.Configuration.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Administration\Pages\Accounts\Account\" />
+    <Folder Include="Areas\Administration\Pages\Accounts\Role\" />
+    <Folder Include="wwwroot\AdminThem\assets\datatables\" />
+    <Folder Include="wwwroot\Pics\SlidePics\" />
+    <Folder Include="wwwroot\Pics\SubGroupSlides\GroupOfMetals\apm\" />
+    <Folder Include="wwwroot\Pics\SubGroupSlides\GroupOfMetals\oxinsteel\" />
+    <Folder Include="wwwroot\Pics\SubGroupSlides\GroupOfMetals\sabasteel\" />
+    <Folder Include="wwwroot\Pics\SubGroupSlides\OtherCompanies\iranyasa\" />
+    <Folder Include="wwwroot\Pics\SubGroupSlides\OtherCompanies\CPFGT\" />
+    <Folder Include="wwwroot\Pics\SubGroupSlides\OtherCompanies\renainvestment\" />
+    <Folder Include="wwwroot\Pics\SubGroupSlides\OtherCompanies\SabaEnergy\" />
+    <Folder Include="wwwroot\Pics\SubGroupSlides\OtherCompanies\sabaarmeh\" />
+    <Folder Include="wwwroot\Pics\SubGroupSlides\PetrochemicalGroup\JAM\" />
+    <Folder Include="wwwroot\Pics\SubGroupSlides\PetrochemicalGroup\fnpcc\" />
+    <Folder Include="wwwroot\Pics\SubGroupSlides\PetrochemicalGroup\khargpetrochemical\" />
+    <Folder Include="wwwroot\Pics\SubGroupSlides\PetrochemicalGroup\akpc\" />
+    <Folder Include="wwwroot\Pics\SubGroupSlides\PetrochemicalGroup\ilampetro\" />
+    <Folder Include="wwwroot\Pics\SubGroupSlides\PetroleumProductsGroup\iranol\" />
+    <Folder Include="wwwroot\Pics\SubGroupSlides\PetroleumProductsGroup\pasargadoil\" />
+    <Folder Include="wwwroot\Pics\SubGroupSlides\PetrochemicalGroup\PoliPropilenJAM\" />
+    <Folder Include="wwwroot\Pics\SubGroupSlides\PowerPlantGroup\nirooas\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>

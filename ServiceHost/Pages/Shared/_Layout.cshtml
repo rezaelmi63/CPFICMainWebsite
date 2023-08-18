@@ -1,0 +1,429 @@
+﻿<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+    @*<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />*@
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>@ViewData["Title"] - cpfic.com شرکت سرمایه‌گذاری صندوق بازنشستگی کشوری</title>
+
+
+    <meta name="keywords" content="هلدینگ نفت ، گاز ، پتروشیمی ، نیروگاهی ، فولادی ، سهامی عام ، وصندوق">
+    <meta name="description" content="شرکت سرمایه گذاری صندوق بازنشستگی کشوری">
+    <meta name="author" content="شرکت سرمایه گذاری صندوق بازنشستگی کشوری وصندوق">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="~/MainWebSiteThem/img/favicon.ico" type="~/image/x-icon">
+    @*<link rel="apple-touch-icon" href="~/img/apple-touch-icon.png">*@
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="~/MainWebSiteThem/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/MainWebSiteThem/vendor/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="~/MainWebSiteThem/vendor/animate/animate.min.css">
+    <link rel="stylesheet" href="~/MainWebSiteThem/vendor/simple-line-icons/css/simple-line-icons.min.css">
+    <link rel="stylesheet" href="~/MainWebSiteThem/vendor/owl.carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/MainWebSiteThem/vendor/owl.carousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="~/MainWebSiteThem/vendor/magnific-popup/magnific-popup.min.css">
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="~/MainWebSiteThem/css/theme.css">
+    <link rel="stylesheet" href="~/MainWebSiteThem/css/theme-elements.css">
+    <link rel="stylesheet" href="~/MainWebSiteThem/css/theme-blog.css">
+    <link rel="stylesheet" href="~/MainWebSiteThem/css/theme-shop.css">
+
+    <!-- Current Page CSS -->
+    <link rel="stylesheet" href="~/MainWebSiteThem/vendor/rs-plugin/css/settings.css">
+    <link rel="stylesheet" href="~/MainWebSiteThem/vendor/rs-plugin/css/layers.css">
+    <link rel="stylesheet" href="~/MainWebSiteThem/vendor/rs-plugin/css/navigation.css">
+
+    <!-- Demo CSS -->
+    <link rel="stylesheet" href="~/MainWebSiteThem/css/skins/default.css">
+    <!-- Skin CSS -->
+    <link rel="stylesheet" href="~/MainWebSiteThem/css/skins/skin-corporate-3.css">
+
+    <!-- Theme Custom CSS -->
+    <link rel="stylesheet" href="~/MainWebSiteThem/css/custom.css">
+
+    <!-- Head Libs -->
+    <script src="~/MainWebSiteThem/vendor/modernizr/modernizr.min.js"></script>
+
+    @RenderSection("Css", false)
+
+    @*project style*@
+    @*<link rel="stylesheet" type="text/css" href="~/css/style.css">*@
+
+</head>
+<body class="loading-overlay-showing" data-plugin-page-transition data-loading-overlay data-plugin-options="{'hideDelay': 500}">
+    <div class="loading-overlay">
+        <div class="bounce-loader">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+
+    <div class="body">
+
+        <header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 148, 'stickySetTop': '-148px', 'stickyChangeLogo': true}">
+            <div class="header-body border-color-primary border-top-0 box-shadow-none">
+
+                <div class="header-top header-top-default border-bottom-0 border-top-0">
+                    <div class="container">
+                        <div class="header-row py-2">
+                            <div class="header-column justify-content-start">
+                                <div class="header-row">
+                                    <nav class="header-nav-top">
+                                        <ul class="nav nav-pills text-uppercase text-2">
+                                            <li class="nav-item nav-item-anim-icon">
+                                                <a class="nav-link pl-0" asp-page="/AboutUs"><i class="fas fa-angle-left"></i> درباره ما</a>
+                                            </li>
+                                            <li class="nav-item nav-item-anim-icon">
+                                                <a class="nav-link" asp-page="/ContactUs"><i class="fas fa-angle-left"></i> تماس با ما</a>
+                                            </li>
+                                            <li class="nav-item nav-item-anim-icon">
+                                                <a class="nav-link" href="https://eservices.cspf.ir/Nezarat/" target="_blank"><i class="fas fa-angle-left"></i> سامانه نظارت مردمی صندوق بازنشستگی کشور  </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="header-container container z-index-2">
+                    <div class="header-row py-2">
+                        <div class="header-column">
+                            <div class="header-row">
+                                <div class="header-logo header-logo-sticky-change">
+                                    <a asp-page="/index">
+                                        <img class="header-logo-sticky opacity-0" alt="CFPIC" width="400" height="70" data-sticky-width="80" data-sticky-height="66" data-sticky-top="96" src="~/MainWebSiteThem/img/Logo-Main-Sticky.png">
+                                        <img class="header-logo-non-sticky opacity-0" alt="CFPIC" width="400" height="70" src="~/MainWebSiteThem/img/LogoMainHolding.png">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-column justify-content-end">
+                            <div class="header-row">
+                                <ul class="header-extra-info d-flex align-items-center">
+                                    <li class="d-none d-sm-inline-flex">
+                                        <div class="header-extra-info-text">
+                                            <label>ایمیل شرکت</label>
+                                            <strong><a href="mailto:PR@cpfic.com">PR@cpfic.com</a></strong>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="header-extra-info-text">
+                                            <label>شماره تماس</label>
+                                            <strong><span class="ltr-text" href="tel:021-41237000">021-41237000</span></strong>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="header-extra-info-text">
+                                            <label> فکس</label>
+                                            <strong><span class="ltr-text" href="tel:021-40880960">021-40880960</span></strong>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-nav-bar bg-primary" data-sticky-header-style="{'minResolution': 991}" data-sticky-header-style-active="{'background-color': 'transparent'}" data-sticky-header-style-deactive="{'background-color': '#0088cc'}">
+                    <div class="container">
+                        <div class="header-row">
+                            <div class="header-column">
+                                <div class="header-row justify-content-end">
+                                    <div class="header-nav header-nav-force-light-text justify-content-start py-2 py-lg-3" data-sticky-header-style="{'minResolution': 991}" data-sticky-header-style-active="{'margin-right': '135px'}" data-sticky-header-style-deactive="{'margin-right': '0'}">
+                                        <div class="header-nav-main header-nav-main-effect-1 header-nav-main-sub-effect-1">
+                                            <nav class="collapse">
+                                                <ul class="nav nav-pills rounded" id="mainNav">
+                                                    <li class="dropdown  ">
+                                                        <a class="dropdown-item dropdown-toggle " asp-page="/index">
+                                                            خانه
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="dropdown ">
+                                                        <a class="dropdown-item dropdown-toggle " asp-page="/AboutUs">
+                                                            درباره ما
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="dropdown">
+                                                        <a class="dropdown-item dropdown-toggle" href="#">
+                                                            گروه های سرمایه گذاری
+                                                        </a>
+                                                        <ul class="dropdown-menu">
+
+
+
+
+                                                            <li class="dropdown-submenu">
+                                                                <a class="dropdown-item" href="#"> گروه پتروشیمی</a>
+                                                                <ul class="dropdown-menu">
+                                                                    <li><a class="dropdown-item" asp-page="/SubGroups/PetrochemicalGroup/JPCCo">شرکت پتروشیمی جم </a></li>
+                                                                    <li><a class="dropdown-item" asp-page="/SubGroups/PetrochemicalGroup/PoiliPropilenJAM">شرکت پلی پروپیلن جم</a></li>
+                                                                    <li><a class="dropdown-item" asp-page="/SubGroups/PetrochemicalGroup/MIS">شرکت پتروشیمی مسجد سلیمان</a></li>
+                                                                    <li><a class="dropdown-item" asp-page="/SubGroups/PetrochemicalGroup/fnpcc">شرکت پتروشیمی فن آوران</a></li>
+                                                                    <li><a class="dropdown-item" asp-page="/SubGroups/PetrochemicalGroup/khargpetrochemical">شرکت پتروشیمی خارک</a></li>
+                                                                    <li><a class="dropdown-item" asp-page="/SubGroups/PetrochemicalGroup/akpc">شرکت پتروشیمی امیر کبیر</a></li>
+                                                                    <li><a class="dropdown-item" asp-page="/SubGroups/PetrochemicalGroup/ilampetro">شرکت پتروشیمی ایلام</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="dropdown-submenu">
+                                                                <a class="dropdown-item" href="#"> گروه فرآورده های نفتی</a>
+                                                                <ul class="dropdown-menu">
+                                                                    
+                                                                    <li><a class="dropdown-item" asp-page="/SubGroups/PetroleumProductsGroup/pasargadoil">شرکت نفت پاسارگاد</a></li>
+                                                                    <li><a class="dropdown-item" asp-page="/SubGroups/PetroleumProductsGroup/iranol">شرکت نفت ایرانول</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="dropdown-submenu">
+                                                                <a class="dropdown-item" href="#">گروه نیروگاهی</a>
+                                                                <ul class="dropdown-menu">
+                                                                    <li><a class="dropdown-item" asp-page="/SubGroups/PowerPlantGroup/nirooas"> شرکت نیرو آتیه صبا</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="dropdown-submenu">
+                                                                <a class="dropdown-item" href="#">گروه فلزات</a>
+                                                                <ul class="dropdown-menu">
+                                                                    <li><a class="dropdown-item" asp-page="/SubGroups/GroupOfMetals/sabasteel"> شرکت صبا فولاد خلیج فارس</a></li>
+                                                                    <li><a class="dropdown-item" asp-page="/SubGroups/GroupOfMetals/oxinsteel"> شرکت فولاد اکسین</a></li>
+                                                                    <li><a class="dropdown-item" asp-page="/SubGroups/GroupOfMetals/apm"> شرکت لوله سازی اهواز</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="dropdown-submenu">
+                                                                <a class="dropdown-item" href="#">سایر شرکت ها </a>
+                                                                <ul class="dropdown-menu">
+                                                                    <li><a class="dropdown-item" asp-page="/SubGroups/OtherCompanies/iranyasa"> شرکت ایران یاسا تایر و رابر</a></li>
+                                                                    <li><a class="dropdown-item" asp-page="/SubGroups/OtherCompanies/sabaarmeh"> شرکت صبا آرمه</a></li>
+                                                                    <li><a class="dropdown-item" asp-page="/SubGroups/OtherCompanies/SabaEnergy"> خدمات گستر صبا انرژی</a></li>
+                                                                    <li><a class="dropdown-item" asp-page="/SubGroups/OtherCompanies/CPFGT"> شرکت بازرگانی صندوق بازنشستگی</a></li>
+                                                                    <li><a class="dropdown-item" asp-page="/SubGroups/OtherCompanies/renainvestment"> سرمایه گذاری گروه صنعتی رنا</a></li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+
+                                                    <li class="dropdown ">
+                                                        <a class="dropdown-item dropdown-toggle" href="#">
+                                                            روابط سهامداری
+                                                        </a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item" href="https://codal.ir/ReportList.aspx?search&Symbol=%D9%88%D8%B5%D9%86%D8%AF%D9%88%D9%82&LetterType=-1&AuditorRef=-1&PageNumber=1&Audited&NotAudited&IsNotAudited=false&Childs&Mains&Publisher=false&CompanyState=-1&Category=-1&CompanyType=-1&Consolidatable&NotConsolidatable" target="_blank">  وصندوق در کدال</a></li>
+                                                            <li><a class="dropdown-item" href="https://saham.cpfic.com/" target="_blank"> پرتال سهامداران   </a></li>
+                                                            <li><a class="dropdown-item" href="http://www.tsetmc.com/InstInfo/37204371816016200" target="_blank"> وصندوق در بورس   </a></li>
+                                                            <li><a class="dropdown-item" asp-page="/FinancialStatements">   صورت های مالی  </a></li>
+                                                            <li><a class="dropdown-item" asp-page="/AuditReports"> گزارشات حسابرسی      </a></li>
+                                                            <li><a class="dropdown-item" asp-page="/ReportsOfTheBoardOfDirectors"> گزارشات هیئت مدیره      </a></li>
+                                                        </ul>
+                                                    </li>
+
+
+
+                                                    <li class="dropdown ">
+                                                        <a class="dropdown-item dropdown-toggle" href="#">
+                                                            رسانه
+                                                        </a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item" asp-page="/News">  اخبار</a></li>
+                                                            <li><a class="dropdown-item" asp-page="/ImageGalleries"> عکس   </a></li>
+                                                            <li><a class="dropdown-item" asp-page="/Videos"> فیلم   </a></li>
+                                                            <li><a class="dropdown-item" asp-page="/Certificates">   گواهی نامه ها  </a></li>
+                                                            <li><a class="dropdown-item" href="~/Uploads/Catalog/Saba-Energy05.pdf" target="_blank"> کاتالوگ      </a></li>
+                                                        </ul>
+                                                    </li>
+
+                                                    <li class="dropdown  ">
+                                                        <a class="dropdown-item dropdown-toggle " asp-page="/Tenders">
+                                                            مناقصات و مزایدات
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="dropdown ">
+                                                        <a class="dropdown-item dropdown-toggle" href="#">
+                                                            رسانه های متمرکز
+                                                        </a>
+                                                        <ul class="dropdown-menu">
+                                                            <li>
+                                                                <a class="dropdown-item" href="https://eservices.cspf.ir/Nezarat/" target="_blank">
+                                                                    سامانه نظارت مردمی صندوق بازنشستگی کشوری
+                                                                </a>
+                                                            </li>
+                                                            <li><a class="dropdown-item" href="http://intranet.cpfic.com/" target="_blank"> شبکه داخلی</a></li>
+                                                            <li><a class="dropdown-item" href="http://eos.cpfic.com/" target="_blank">سیستم تردد   </a></li>
+                                                            <li><a class="dropdown-item" href="http://webmail.cpfic.com/" target="_blank"> سرویس ایمیل شرکت </a></li>
+                                                            <li><a class="dropdown-item" href="http://chargoon.cpfic.com/UserLogin.aspx" target="_blank">  اتوماسیون اداری  </a></li>
+                                                            <li><a class="dropdown-item" href="https://bi.cpfic.com/QvAJAXZfc/opendoc.htm?document=DASHBOARD_CPFIC%20_CO.qvw&host=QVS%40bi" target="_blank"> داشبورد های مدیریتی هلدینگ   </a></li>
+                                                            <li><a class="dropdown-item" href="https://bi.cpfic.com/QvAJAXZfc/opendoc.htm?document=DASHBOARD_CPFIC%20_CO.qvw&host=QVS%40bi" target="_blank">   داشبورد های مدیریتی شرکت ها </a></li>
+                                                            <li><a class="dropdown-item" href="https://www.skyroom.online/ch/cpfic/sabaenergy" target="_blank">     سامانه وب کنفرانس </a></li>
+                                                            <li><a class="dropdown-item" href="http://dms.cpfic.ir" target="_blank">     سامانه DMS  </a></li>
+                                                            <li><a class="dropdown-item" href="http://simorgh.cpfic.com" target="_blank">   سامانه ارزیابی عملکرد کارکنان</a></li>
+                                                        </ul>
+                                                    </li>
+
+                                                    <li class="dropdown ">
+                                                        <a class="dropdown-item dropdown-toggle" href="#">
+                                                            ارتباط با ما
+                                                        </a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item" asp-page="/ContactUs"> اطلاعات تماس</a></li>
+                                                            <li><a class="dropdown-item" asp-page="/CooperationRequest">درخواست همکاری  </a></li>
+                                                            <li><a class="dropdown-item" asp-page="/CriticismsSuggestions">انتقادات و پیشنهادات </a></li>
+
+
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+
+
+                                        <button class="btn header-btn-collapse-nav my-2" data-toggle="collapse" data-target=".header-nav-main nav">
+                                            <i class="fas fa-bars"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+     @*   <div class="container">*@
+            <main role="main" class="main">
+                @RenderBody()
+            </main>
+        @*</div>*@
+
+
+        <footer id="footer" class="mt-0">
+            <div class="container my-4">
+                <div class="footer-ribbon">
+                    <span>وصندوق</span>
+                </div>
+                <div class="row pt-5 py-lg-5">
+                    <div class="col-sm-6 col-lg-3 mb-5 mb-lg-0">
+                        @*<h5 class="text-6 font-weight-light text-color-light mb-4">آدرس</h5>*@
+                        <h5 class="text-5 font-weight-semibold text-color-light mb-4">آدرس </h5>
+                        @*<p class="text-4 mb-0">تهران خیابان شیراز جنوبی ، پایین تر از اتوبان شهید همت ، خیابان زرتشتیان، بعد از تقاطع گلستان، پلاک 11</p>*@
+                        <p class="text-4 mb-0">
+                            <span class="text-color-light ltr-text">
+                                تهران خیابان شیراز جنوبی ، پایین تر از اتوبان شهید همت ، خیابان زرتشتیان، بعد از تقاطع گلستان، پلاک 11
+                            </span>
+                        </p>
+                    </div>
+
+
+                    <div class="col-md-6 col-lg-2 text-center text-lg-left mb-5 mb-lg-0">
+                        <h5 class="text-5 font-weight-semibold text-color-light mb-4">لینک ها</h5>
+                        <ul class="list list-unstyled">
+                            <li class="mb-1"><a href="https://www.leader.ir/fa" target="_blank" class="link-hover-style-1"> دفتر مقام معظم رهبری</a></li>
+                            <li class="mb-1"><a href="http://dolat.ir/" target="_blank" class="link-hover-style-1"> دفتر ریاست جمهوری</a></li>
+                            <li class="mb-1"><a href="https://www.icana.ir/Fa/" target="_blank" class="link-hover-style-1"> مجلس شورای اسلامی</a></li>
+                            <li class="mb-1"><a href="https://dadiran.ir/" target="_blank" class="link-hover-style-1"> قوه قضاییه</a></li>
+                            <li class="mb-1"><a href="https://www.mcls.gov.ir/" target="_blank" class="link-hover-style-1"> وزارت تعاون، کار و رفاه اجتماعی</a></li>
+                            <li class="mb-1"><a href="https://www.cspf.ir/Default.aspx" target="_blank" class="link-hover-style-1"> صندوق بازنشستگی کشوری</a></li>
+                            <li class="mb-1"><a href="http://mefa.ir/" target="_blank" class="link-hover-style-1"> وزارت اقتصاد و امور دارایی</a></li>
+                            <li class="mb-1"><a href="http://moe.gov.ir/" target="_blank" class="link-hover-style-1"> وزارت نیرو</a></li>
+                            <li class="mb-1"><a href="https://www.nipc.ir/" target="_blank" class="link-hover-style-1"> شرکت ملی پتروشیمی</a></li>
+                            <li class="mb-1"><a href="https://www.nioc.ir/Portal/Home/" target="_blank" class="link-hover-style-1"> شرکت ملی نفت</a></li>
+                            <li class="mb-1"><a href="http://www.niscoir.com/" target="_blank" class="link-hover-style-1"> شرکت ملی فولاد</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="col-sm-6 col-lg-3 mb-5 mb-lg-0">
+                        @*<h5 class="text-6 font-weight-light text-color-light mb-3">تماس</h5>*@
+                        <h5 class="text-5 font-weight-semibold text-color-light mb-4">تماس </h5>
+                        @*<p class="text-7 text-color-light font-weight-light mb-2"><span class="ltr-text">021-41237000</span></p>*@
+                        <p class="text-4 mb-0">تلفن: <span class="text-color-light ltr-text">021-41237000</span></p>
+
+                        <p class="text-4 mb-0">فکس: <span class="text-color-light ltr-text">021-40880960</span></p>
+                        <p class="text-4 mb-0">ایمیل: <span class="text-color-light ltr-text">PR@cpfic.com</span></p>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 mb-5 mb-lg-0">
+                        <h5 class="text-6 font-weight-light text-color-light mb-4 pb-1">شبکه های اجتماعی</h5>
+                        <ul class="footer-social-icons social-icons m-0">
+                            <li class="social-icons-"><a href="https://www.aparat.com/cpfic_com" target="_blank" title="Aparat"><i class="fab"></i></a></li>
+                            <li class="social-icons-twitter"><a href="http://twitter.com/cpfic_ir" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                            <li class="social-icons-linkedin"><a href="https://www.linkedin.com/in/cpfic-com" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li class="social-icons-instagram"><a href="https://www.instagram.com/accounts/login/?next=/cpfic_com/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                            <li class="social-icons-telegram"><a href="http://www.telegram.me/cpfic_com" target="_blank" title="Telegram"><i class="fab fa-telegram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="footer-copyright footer-copyright-style-2">
+                    <div class="py-2">
+                        <div class="row py-4">
+                            <div class="col-md-12 d-flex align-items-center justify-content-center">
+                                <p>
+                                    Copyright © 2023 by www.CPFIC.com All Rights Reserved
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    @*<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.3.0/chart.min.js" integrity="sha512-mlz/Fs1VtBou2TrUkGzX4VoGvybkD9nkeXWJm3rle0DPHssYYx4j+8kIS15T78ttGfmOjH0lLaBXGcShaVkdkg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>*@
+
+    <script src=" https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js "></script>
+
+    @*<script src="~/vendor/jquery/jquery.min.js"></script>*@
+    
+    <script src="~/MainWebSiteThem/vendor/jquery.appear/jquery.appear.min.js"></script>
+    <script src="~/MainWebSiteThem/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="~/MainWebSiteThem/vendor/jquery.cookie/jquery.cookie.min.js"></script>
+    <script src="~/MainWebSiteThem/vendor/popper/umd/popper.min.js"></script>
+    <script src="~/MainWebSiteThem/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/MainWebSiteThem/vendor/common/common.min.js"></script>
+    <script src="~/MainWebSiteThem/vendor/jquery.validation/jquery.validate.min.js"></script>
+    <script src="~/MainWebSiteThem/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
+    <script src="~/MainWebSiteThem/vendor/jquery.gmap/jquery.gmap.min.js"></script>
+    <script src="~/MainWebSiteThem/vendor/jquery.lazyload/jquery.lazyload.min.js"></script>
+    <script src="~/MainWebSiteThem/vendor/isotope/jquery.isotope.min.js"></script>
+    <script src="~/MainWebSiteThem/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="~/MainWebSiteThem/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="~/MainWebSiteThem/vendor/vide/jquery.vide.min.js"></script>
+    <script src="~/MainWebSiteThem/vendor/vivus/vivus.min.js"></script>
+
+    <!-- Theme Base, Components and Settings -->
+    <script src="~/MainWebSiteThem/js/theme.js"></script>
+
+    <!-- Current Page Vendor and Views -->
+    <script src="~/MainWebSiteThem/vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+    <script src="~/MainWebSiteThem/vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+    <!-- Current Page Vendor and Views -->
+    <script src="~/MainWebSiteThem/js/views/view.contact.js"></script>
+
+    <!-- Theme Custom -->
+    <script src="~/MainWebSiteThem/js/custom.js"></script>
+
+    <!-- Theme Initialization Files -->
+    <script src="~/MainWebSiteThem/js/theme.init.js"></script>
+
+    <script src="https://www.google.com/recaptcha/api.js?hl=fa" async defer></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

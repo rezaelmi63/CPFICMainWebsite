@@ -1,0 +1,102 @@
+﻿@page
+@model ServiceHost.Pages.CriticismsSuggestionsModel
+@{
+}
+
+
+<div class="container">
+
+	<div class="row py-4">
+		<div class="col-lg-12">
+
+			<div class="overflow-hidden mb-1">
+				<h2 class="font-weight-normal text-7 mt-2 mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="200"><strong class="font-weight-extra-bold">انتقادات و پیشنهادات</strong> </h2>
+			</div>
+			<div class="overflow-hidden mb-4 pb-3">
+				<p class="mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="400">
+					در راستای احترام به حقوق کاربران عزیز، برای ارتباط مستقیم با کارشناسان و ارائه انتقادات و پیشنهادات با آدرس زیر مکاتبه نمایید:
+				</p>
+				<p class="mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="400">
+					ایمیل : PR@cpfic.com
+				</p>
+			</div>
+
+			<form class="contact-form mb-5 mb-lg-0" action="php/contact-form.php" method="POST">
+				<div class="contact-form-success alert alert-success d-none mt-4">
+					<strong>موفقیت!</strong> پیام شما به ما ارسال شد.
+				</div>
+
+				<div class="contact-form-error alert alert-danger d-none mt-4">
+					<strong>خطا!</strong> خطایی در ارسال پیام شما پیش آمد.
+					<span class="mail-error-message text-1 d-block"></span>
+				</div>
+
+				<div class="form-row">
+					<div class="form-group col-lg-6">
+						<label class="required font-weight-bold text-dark text-2">نام کامل</label>
+						<input type="text" value="" data-msg-required="لطفا نام خود را وارد کنید." style="border-radius:0.25rem!important;" maxlength="100" class="form-control" name="name" required>
+					</div>
+					<div class="form-group col-lg-6">
+						<label class="required font-weight-bold text-dark text-2">آدرس ایمیل</label>
+						<input type="email" value="" data-msg-required="لطفا آدرس ایمیل خود را وارد کنید." style="border-radius:0.25rem!important;" data-msg-email="لطفا یک آدرس ایمیل معتبر وارد کنید." maxlength="100" class="form-control text-left" name="email" dir="ltr" required>
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="form-group col">
+						<label class="font-weight-bold text-dark text-2">موضوع</label>
+						<input type="text" value="" data-msg-required="لطفا موضوع را وارد کنید." style="border-radius:0.25rem!important;" maxlength="100" class="form-control" name="subject" required>
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="form-group col">
+						<label class="required font-weight-bold text-dark text-2">پیام</label>
+						<textarea maxlength="5000" data-msg-required="لطفا پیام خود را وارد کنید." style="border-radius:0.25rem!important;" rows="8" class="form-control" name="message" required></textarea>
+					</div>
+				</div>
+
+				@*Site Key : 	6LfkCeUmAAAAAIJH_v1E7XzcWnON5q9l38kaRrxT*@
+				@*secret Key  :6LfkCeUmAAAAAPBcei___cro-x-MZmqcwo5QeGIN*@
+
+				<div class="form-row">
+					<div class="form-group col">
+						<div class="g-recaptcha" data-sitekey="6LfkCeUmAAAAAIJH_v1E7XzcWnON5q9l38kaRrxT"></div>
+					</div>
+				</div>
+
+				<div class="form-row">
+					<div class="form-group col">
+						<input type="submit" value="ارسال پیام" class="btn btn-primary btn-modern" style="border-radius:0.25rem!important;" data-loading-text="در حال بارگذاری ...">
+					</div>
+				</div>
+			</form>
+
+		</div>
+@*		<div class="col-lg-6">
+
+			<div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="800">
+				<h4 class="mt-2 mb-1"><strong>انتقادات و پیشنهادات</strong> </h4>
+				<ul class="list list-icons list-icons-style-2 mt-2">
+					<li class="line-height-9">
+						<i class="fas fa-map-marker-alt top-6"></i> <strong class="text-dark">آدرس:</strong>
+						تهران خیابان شیراز جنوبی ، پایین تر از اتوبان شهید همت ، خیابان زرتشتیان، بعد از تقاطع گلستان، پلاک 11
+					</li>
+					<li class="line-height-9"><i class="fas fa-phone top-6"></i> <strong class="text-dark">تلفن:</strong> <span class="ltr-text">021-40880960</span></li>
+					<li class="line-height-9"><i class="fas fa-envelope top-6"></i> <strong class="text-dark">ایمیل:</strong> <a href="mailto:mail@example.com">PR@cpfic.com</a></li>
+				</ul>
+			</div>
+
+			<div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="950">
+				<h4 class="pt-5"><strong>ساعات</strong> کاری شرکت</h4>
+				<ul class="list list-icons list-dark mt-2">
+					<li><i class="far fa-clock top-6"></i> شنبه تا چهارشنبه - 7 ق.ظ تا 5 ب.ظ</li>
+					<li><i class="far fa-clock top-6"></i> پنج‌شنبه - 7 ق.ظ تا 2 ب.ظ</li>
+
+				</ul>
+			</div>
+
+
+		</div>*@
+
+	</div>
+
+</div>

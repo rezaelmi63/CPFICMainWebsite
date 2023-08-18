@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Coderthemes">
+
+    <link rel="shortcut icon" href="~/favicon.ico">
+
+    <title>@ViewData["Title"] | شرکت سرمایه‌گذاری صندوق بازنشستگی کشوری</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+
+    <!-- Base Css Files -->
+    <link href="~/AdminThem/assets/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Font Icons -->
+    <link href="~/AdminThem/assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/AdminThem/assets/ionicon/css/ionicons.min.css" rel="stylesheet" />
+    <link href="~/AdminThem/assets/css/material-design-iconic-font.min.css" rel="stylesheet">
+
+    <!-- animate css -->
+    <link href="~/AdminThem/assets/css/animate.css" rel="stylesheet" />
+
+    <!-- Waves-effect -->
+    <link href="~/AdminThem/assets/css/waves-effect.css" rel="stylesheet">
+
+    <link href="~/AdminThem//assets/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- sweet alerts -->
+    <link href="~/AdminThem/assets/sweet-alert/sweet-alert.min.css" rel="stylesheet">
+
+    <!-- Custom Files -->
+    <link href="~/AdminThem/assets/css/persian-datepicker.min.css" rel="stylesheet" />
+
+    @RenderSection("Css", false)
+
+    <link href="~/AdminThem/assets/css/helper.css" rel="stylesheet" type="text/css" />
+    <link href="~/AdminThem/assets/css/style.css" rel="stylesheet" type="text/css" />
+
+    <script src="~/AdminThem/assets/js/modernizr.min.js"></script>
+    
+
+</head>
+<body>
+    <div class="wrapper-page">
+        <div class="panel panel-color panel-primary panel-pages">
+
+    @RenderBody()
+
+        </div>
+    </div>
+    <script>
+        var resizefunc = [];
+    </script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/AdminThem/assets/js/bootstrap.min.js"></script>
+    <script src="~/AdminThem/assets/js/waves.js"></script>
+    <script src="~/AdminThem/assets/js/wow.min.js"></script>
+    <script src="~/AdminThem/assets/js/jquery.nicescroll.js" type="text/javascript"></script>
+    <script src="~/AdminThem/assets/js/jquery.scrollTo.min.js"></script>
+    <script src="~/AdminThem/assets/chat/moment-2.2.1.js"></script>
+    <script src="~/AdminThem/assets/jquery-sparkline/jquery.sparkline.min.js"></script>
+    <script src="~/AdminThem/assets/jquery-detectmobile/detect.js"></script>
+    <script src="~/AdminThem/assets/fastclick/fastclick.js"></script>
+    <script src="~/AdminThem/assets/jquery-slimscroll/jquery.slimscroll.js"></script>
+    <script src="~/AdminThem/assets/jquery-blockui/jquery.blockUI.js"></script>
+
+    <!-- sweet alerts -->
+    <script src="~/AdminThem/assets/sweet-alert/sweet-alert.min.js"></script>
+    <script src="~/AdminThem/assets/sweet-alert/sweet-alert.init.js"></script>
+
+    @*<!-- flot Chart -->*@
+    <script src="~/AdminThem/assets/flot-chart/jquery.flot.js"></script>
+    <script src="~/AdminThem/assets/flot-chart/jquery.flot.time.js"></script>
+    <script src="~/AdminThem/assets/flot-chart/jquery.flot.tooltip.min.js"></script>
+    <script src="~/AdminThem/assets/flot-chart/jquery.flot.resize.js"></script>
+    <script src="~/AdminThem/assets/flot-chart/jquery.flot.pie.js"></script>
+    <script src="~/AdminThem/assets/flot-chart/jquery.flot.selection.js"></script>
+    <script src="~/AdminThem/assets/flot-chart/jquery.flot.stack.js"></script>
+    <script src="~/AdminThem/assets/flot-chart/jquery.flot.crosshair.js"></script>
+
+    <!-- Counter-up -->
+    <script src="~/AdminThem/assets/counterup/waypoints.min.js" type="text/javascript"></script>
+    <script src="~/AdminThem/assets/counterup/jquery.counterup.min.js" type="text/javascript"></script>
+
+    
+
+    <!-- CUSTOM JS -->
+    <script src="~/AdminThem/assets/js/jquery.app.js"></script>
+
+    <!-- Dashboard -->
+    <script src="~/AdminThem/assets/js/jquery.dashboard.js"></script>
+
+    <!-- Chat -->
+    <script src="~/AdminThem/assets/js/jquery.chat.js"></script>
+
+    <!-- Todo -->
+    <script src="~/AdminThem/assets/js/jquery.todo.js"></script>
+
+
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+
+
+    <script src="~/AdminThem/assets/js/site.js"></script>
+
+    @RenderSection("Scripts",false)
+</body>
+</html>

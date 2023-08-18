@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <RootNamespace>_01_WebsitemanagementQuery</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Query\wwkoeoix.qcz~" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Websitemanagement.Infrastructure.EFCore\Websitemanagement.Infrastructure.EFCore.csproj" />
+  </ItemGroup>
+
+</Project>

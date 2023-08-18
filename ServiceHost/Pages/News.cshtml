@@ -1,0 +1,106 @@
+﻿@page
+@model ServiceHost.Pages.NewsModel
+@{
+}
+
+<div class="container py-4">
+<div class="row">
+	<div class="col-lg-3">
+		<aside class="sidebar mb-5 mb-lg-0 pb-2 pb-lg-0">
+			<form action="page-search-results.html" method="get">
+				<div class="input-group mb-3 pb-1">
+					<input class="form-control text-1" placeholder="جستجو ..." name="s" id="s" type="text">
+					<span class="input-group-append">
+						<button type="submit" class="btn btn-dark text-1 p-2"><i class="fas fa-search m-2"></i></button>
+					</span>
+				</div>
+			</form>
+
+		</aside>
+	</div>
+	<div class="col-lg-9">
+		<div class="blog-posts">
+
+			<article class="post post-medium">
+				<div class="row mb-3">
+					<div class="col-lg-5">
+						<div class="post-image">
+							<a href="blog-post.html">
+									<img src="../MainWebSiteThem/img/News/SabaFolad.jpg" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-7">
+						<div class="post-content">
+								<h2 class="font-weight-semibold pt-4 pt-lg-0 text-5 line-height-7 mb-2 pb-1">
+									<a href="#">
+										تولید در صبافولاد خلیج فارس رکورد زد
+									</a>
+								</h2>
+							<p class="mb-0">
+									شرکت صبافولاد خلیج‌فارس موفق شد در سه ماه ابتدای  سال 1402 (سال مهار تورم و رشد تولید) نسبت به مدت زمان مشابه در سال گذشته، تولید خود را به میزان ۵۰ درصد افزایش دهد.
+
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<div class="post-meta mt-1">
+							<span><i class="far fa-calendar-alt"></i> 10 مرداد 1402 </span>
+								<span><i class="far fa-user"></i> توسط  <a href="#"> مدیر سیستم</a> </span>
+								<span><i class="far fa-folder"></i> <a href="#"> صبا انرژی  </a> <a href="#">امور فرهنگی</a> <a href="#">وصندوق</a> </span>
+							<span class="d-block d-sm-inline-block float-sm-right mt-3 mt-sm-0"><a href="#" class="btn btn-xs btn-light text-1 text-uppercase">بیشتر بخوانید</a></span>
+						</div>
+					</div>
+				</div>
+			</article>
+
+				<article class="post post-medium">
+					<div class="row mb-3">
+						<div class="col-lg-5">
+							<div class="post-image">
+								<a href="blog-post.html">
+									<img src="../MainWebSiteThem/img/News/New-Project-13.jpg" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="">
+								</a>
+							</div>
+						</div>
+						<div class="col-lg-7">
+							<div class="post-content">
+								<h2 class="font-weight-semibold pt-4 pt-lg-0 text-5 line-height-7 mb-2 pb-1"><a href="#">پیام مدیرعامل هلدینگ صباانرژی به مناسبت فرارسیدن تاسوعا و عاشورای حسینی</a></h2>
+								<p class="mb-0">
+									«اِنَّ الْحُسین مِصباحُ الْهُدی وَ سَفینَهُ الْنِّجاه»
+
+
+									قیام عاشورا بزرگترین حماسه آزادگی و آزادیخواهی، ظلم ستیزی و عدالت خواهی، شجاعت و ایثار، فداکاری و گذشت و امر به معروف و نهی از منکر در تاریخ بشر است.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<div class="post-meta mt-1">
+								<span><i class="far fa-calendar-alt"></i> 05 مرداد 1402 </span>
+								<span><i class="far fa-user"></i> توسط  <a href="#"> مدیر سیستم</a> </span>
+								<span><i class="far fa-folder"></i> <a href="#"> صبا انرژی  </a> <a href="#">امور فرهنگی</a> <a href="#">وصندوق</a> </span>
+								<span class="d-block d-sm-inline-block float-sm-right mt-3 mt-sm-0"><a href="#" class="btn btn-xs btn-light text-1 text-uppercase">بیشتر بخوانید</a></span>
+							</div>
+						</div>
+					</div>
+				</article>
+
+
+
+
+			<ul class="pagination float-right">
+				<li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-right"></i></a></li>
+				<li class="page-item active"><a class="page-link" href="#">1</a></li>
+@*				<li class="page-item"><a class="page-link" href="#">2</a></li>
+				<li class="page-item"><a class="page-link" href="#">3</a></li>*@
+				<li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-left"></i></a></li>
+			</ul>
+
+		</div>
+	</div>
+</div>
+</div>

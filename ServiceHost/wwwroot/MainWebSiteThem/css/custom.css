@@ -1,0 +1,20 @@
+/* Add here all your CSS customizations */
+
+.subset-item-icon {
+    /*width: 180px;*/
+    background: #d5be8d;
+    border-radius: 15px;
+    /*padding: 40px;*/
+    /*transition: all .5s;*/
+    box-shadow: 0px 0px 5px 1px #17a2b8;
+    /*position: relative;*/
+    /*z-index: 2;*/
+}
+
+.subset-item.main .subset-item-icon {
+    /*width: 250px;*/
+}
+
+.subset-item-icon svg {
+    fill: #fff;
+}

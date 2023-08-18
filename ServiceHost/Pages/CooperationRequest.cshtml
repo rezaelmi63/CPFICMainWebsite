@@ -1,0 +1,146 @@
+﻿@page
+@model ServiceHost.Pages.CooperationRequestModel
+@{
+}
+<div class="container py-2">
+
+    <div class="row">
+
+        <div class="col-md-6">
+
+            <div class="mb-1">
+                <h2 class="font-weight-normal text-7 mb-0">درخواست <strong class="font-weight-extra-bold">همکاری</strong></h2>
+            </div>
+            <div class="mb-4 pb-3">
+                <p class="mb-0">  اطلاعات خود را به صورت کامل وارد کنید.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-body card-body" style="overflow: auto">
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="txt_Name">نام</label>
+                <input type="text" class="form-control" style="border-radius:0.25rem!important;" id="txt_Name" placeholder="نام">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="txt_LName">نام خانوادگی</label>
+                <input type="text" class="form-control" id="txt_LName" style="border-radius:0.25rem!important;" placeholder="نام خانوادگی">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="txt_fatherName">نام پدر </label>
+                <input type="text" class="form-control" id="txt_fatherName" style="border-radius:0.25rem!important;" placeholder="نام پدر">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="txt_CodeMeli">کد ملی</label>
+                <input type="text" class="form-control" id="txt_CodeMeli" style="border-radius:0.25rem!important;" placeholder="کد ملی">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="Date_Bitrhday">تاریخ تولد</label>
+                <input id="Date_Bitrhday" name="Date_Bitrhday" style="border-radius:0.25rem!important;" class="form-control" type="text" style="text-align: center" readonly="readonly" onclick="displayDatePicker('Date_Bitrhday');" />
+            </div>
+            <div class="form-group col-md-4">
+                <label for="txt_birthplace">محل توئلد</label>
+                <input type="text" class="form-control" id="txt_birthplace" style="border-radius:0.25rem!important;" placeholder="محل تولد ">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="ddlEducation_level">مقطع تحصیلی</label>
+                <select id="ddlEducation_level" class="form-control" style="border-radius:0.25rem!important;">
+                </select>
+            </div>
+
+            <div class="form-group col-md-4">
+                <label for="txt_EducationField"> رشته تحصیلی</label>
+                <input type="text" class="form-control" id="txt_EducationField" style="border-radius:0.25rem!important;" placeholder=" رشته تحصیلی ">
+            </div>
+
+            <div class="form-group col-md-4">
+                <label for="txt_Mobile">تلفن همراه  </label>
+                <input type="text" class="form-control" id="txt_Mobile" style="border-radius:0.25rem!important;" placeholder=" تلفن همراه  ">
+            </div>
+
+            <div class="form-group col-md-4">
+                <label for="txt_phone_sos"> تلفن ضروری </label>
+                <input type="text" class="form-control" id="txt_phone_sos" style="border-radius:0.25rem!important;" placeholder="  تلفن ضروری ">
+            </div>
+
+            <div class="form-group col-md-12">
+                <label for="inputPassword4">وضعیت تاهل</label>
+                <div class="form-check form-check-label">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="rob_Marred" value="rob_Marred" checked="checked">
+                    <label class="form-check-label" for="rob_Marred">متاهل</label>
+                </div>
+                <div class="form-check form-check-label">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="rob_Single" value="rob_Single">
+                    <label class="form-check-label" for="rob_Single">مجرد</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group col-md-6">
+            <label for="txt_Address">آدرس</label>
+            @*<input type="text" class="form-control" id="txt_Address" placeholder="آدرس">*@
+            <textarea maxlength="5000" data-msg-required="لطفا پیام خود را وارد کنید." rows="5" style="border-radius:0.25rem!important;" class="form-control" name="txt_Address" id="txt_Address" required></textarea>
+
+
+
+            <label for="txt_Resume">سوابق کاری</label>
+            @*<input type="text" class="form-control" id="txt_Resume" placeholder="سوابق کاری">*@
+            <textarea maxlength="5000" data-msg-required="لطفا پیام خود را وارد کنید." rows="5" style="border-radius:0.25rem!important;" class="form-control" name="txt_Resume" id="txt_Resume" required></textarea>
+
+            <label for="txt_Description">توضیحات </label>
+            @*<input type="text" class="form-control" id="txt_Description" placeholder="توضیحات ">*@
+            <textarea maxlength="5000" data-msg-required="لطفا پیام خود را وارد کنید." rows="5" style="border-radius:0.25rem!important;" class="form-control" name="txt_Description" id="txt_Description"></textarea>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col py-4">
+            <hr class="solid">
+        </div>
+    </div>
+
+    <div class="card-body" style="text-align: right">
+        <div class="form-row">
+
+            <div class="form-group col-md-12">
+                <label for="inputPassword4">آپلود فایل</label>
+                <a class="btn btn-primary" style="border-radius:0.25rem!important;" id="btnSelectFileUsers_Dastoori_Description" onclick="ImageClickForBrowse_File('UploadPicHeader_File');">انتخاب فایل</a>
+                <span id="lblSelectFileUsers_Dastoori_Description"></span>
+                <input type="file" class="upload" style="display: none" id="UploadPicHeader_File" onchange="fileOnchangePic_File('UploadPicHeader_File','lblSelectFileUsers_Dastoori_Description')">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col py-4">
+            <hr class="solid">
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group col">
+            <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col py-4">
+            <hr class="solid">
+        </div>
+    </div>
+
+    <div class="form-row align-items-center justify-content-center">
+        <div class="form-group col">
+            <input type="submit" value="ارسال " style="border-radius:0.25rem!important;" class="btn btn-primary btn-modern" data-loading-text="در حال بارگذاری ...">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col py-4">
+            <hr class="solid">
+        </div>
+    </div>
+
+</div>

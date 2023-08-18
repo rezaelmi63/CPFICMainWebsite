@@ -1,0 +1,127 @@
+﻿@model WebsiteManagement.Application.Contracts.NewsCategoryAC.EditNewsCategory
+@{
+}
+
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h4 class="modal-title">@Model.NewsHeader : ویرایش خبر </h4>
+</div>
+
+<form asp-page="./Index" asp-page-handler="Edit"
+      method="post"
+      data-ajax="true"
+      data-callback=""
+      data-action="Refresh"
+      enctype="multipart/form-data">
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="NewsHeader" class="control-label">تیتر خبر</label>
+                    <input type="text" class="form-control" asp-for="NewsHeader" onchange="fillField('NewsHeader','NewsHeaderPictureTitle');
+                        fillField('NewsHeader','NewsHeaderPictureTitle');
+                        fillField('NewsHeader','MetaDescription');">
+                    <span asp-validation-for="NewsHeader" class="error"></span>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label asp-for="NewsHeaderDescription" class="control-label">متن اولیه خبر</label>
+                    <textarea class="form-control autogrow" asp-for="NewsHeaderDescription"
+                              style="height: 104px; overflow: hidden; resize: horizontal; word-wrap: break-word;" id="titr2"></textarea>
+                    <span asp-validation-for="NewsHeaderDescription" class="error"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="NewsHeaderPictureTitle" class="control-label">توضیحات تصویر خبر</label>
+                    <input type="text" class="form-control" asp-for="NewsHeaderPictureTitle" >
+                    <span asp-validation-for="NewsHeaderPictureTitle" class="error"></span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label asp-for="NewsHeaderPictureUrl" class="control-label"> تصویر اولیه خبر</label>
+                    @*<input type="file" class="form-control" asp-for="NewsHeaderPictureUrl" accept="image/*">*@
+                    <input type="text" class="form-control" asp-for="NewsHeaderPictureUrl">
+                    @* <span asp-validation-for="PictureUrl" class="error"></span>*@
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label asp-for="NewsHeaderPictureAlt" class="control-label">Alt تصویر</label>
+                    <input type="text" class="form-control" asp-for="NewsHeaderPictureAlt">
+                    <span asp-validation-for="NewsHeaderPictureAlt" class="error"></span>
+                </div>
+            </div>
+        </div>
+
+
+
+        <hr />
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label asp-for="KeyWords" class="control-label">کلمات کلیدی خبر</label>
+                    <input type="text" class="form-control" asp-for="KeyWords">
+                    <span asp-validation-for="KeyWords" class="error"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label asp-for="MetaDescription" class="control-label">Meta Descryption خبر</label>
+                    <input type="text" class="form-control" asp-for="MetaDescription">
+                    <span asp-validation-for="MetaDescription" class="error"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" hidden>
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label asp-for="Slug" class="control-label">اسلاگ</label>
+                    <input type="text" class="form-control" asp-for="Slug">
+                    <span asp-validation-for="Slug" class="error"></span>
+                </div>
+            </div>
+        </div>
+        <input type="hidden" asp-for="id" value="@Model.id" />
+    </div>
+
+
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">بستن</button>
+        <button type="submit" class="btn btn-info waves-effect waves-light">ویرایش</button>
+    </div>
+</form>
+
+<script type="text/javascript">
+    //$(function () {
+    //    $('#checkPrice').change(function () {
+    //        myFunction();
+    //    });
+    //});
+    //$(document).ready(function () {
+    //    myFunction();
+    //});
+
+    //function myFunction() {
+    //    $('#TitrHavePrice').toggle($('#checkPrice').is(':checked'));
+    //    $('#titr1').val("");
+    //    $('#titr2').val("");
+    //    $('#TitrWitoutPrice').toggle($('#checkPrice').is(':unchecked'));
+    //    $('#checkPriceTitr').val("");
+    //    $('#txtPriceShow').val("");
+    //}
+</script>
